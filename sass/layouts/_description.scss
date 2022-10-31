@@ -1,0 +1,43 @@
+.section-title {
+    margin-bottom: 50px;
+    text-align: center;
+    color: var(--primary-text-color);
+    font-size: 36px;
+    line-height: 1.17;
+}
+
+.container-work {
+    display: flex;
+}
+
+.image-work {
+    display: block;
+    width: 370px;
+}
+
+.container-work .item +.item {
+    margin-left: 30px;
+}
+
+.description {
+    position: relative;
+}
+
+.description-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.description-list {
+    font-weight: 700;
+    line-height: 1.14;
+    color: var(--primary-white-color);
+    text-align: center;
+    text-transform: uppercase;
+}
