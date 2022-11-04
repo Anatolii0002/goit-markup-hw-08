@@ -4,22 +4,22 @@
 
 .navigation,
 .contact__container {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .contact {
-  // display: flex;
-  // align-items: center;
+  display: flex;
+  align-items: center;
   & li:not(:first-child) {
     margin-left: 50px;
   }
 }
 
 .menu {
-  // display: flex;
-  // align-items: center;
-  // margin-left: 93px;
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
   & li:not(:first-child) {
     margin-left: 50px;
   }
