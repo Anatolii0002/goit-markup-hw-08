@@ -1,9 +1,10 @@
 @import "./utils/vars";
 @import "./utils/hidden";
+@import "./utils/mixin";
 
 @import "./base/reset";
 @import "./base/common";
-
+@import "./components/container";
 @import "./components/modal";
 @import "./components/section";
 
@@ -14,7 +15,6 @@
 @import "./layouts/team";
 @import "./layouts/clients";
 @import "./layouts/btns";
-@import "./layouts/items";
 @import "./layouts/desing";
 @import "./layouts/footer";
 @import "./layouts/social";
