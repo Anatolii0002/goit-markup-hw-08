@@ -1,3 +1,25 @@
+.work {
+
+    // display: none;
+    @media screen and(max-width:1199px) {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    @include desktop {
+        display: flex;
+    }
+}
+
 .section-title {
     margin-bottom: 50px;
     text-align: center;
@@ -8,6 +30,7 @@
 
 .container-work {
     display: flex;
+    gap: 30px;
 }
 
 .image-work {
@@ -15,29 +38,37 @@
     width: 370px;
 }
 
-.container-work .item +.item {
+.container-work .item+.item {
     margin-left: 30px;
 }
 
 .description {
     position: relative;
+    // z-index: -1;
 }
 
-.description-title {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    width: 370px;
-    height: 70px;
-    background-color: rgba(47, 48, 58, 0.8);
-}
+// .description-title {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     height: 70px;
+//     background-color: rgba(47, 48, 58, 0.8);
+// }
 
 .description-list {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+
+    padding: 27px 0;
+    width: 100%;
     font-weight: 700;
     line-height: 1.14;
     color: var(--primary-white-color);
     text-align: center;
     text-transform: uppercase;
+    background-color: rgba(47, 48, 58, 0.8);
 }

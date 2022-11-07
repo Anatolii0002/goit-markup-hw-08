@@ -1,31 +1,64 @@
 .hero {
   display: flex;
-  text-align: center;
+  align-items: center;
   margin: 0 auto;
   width: 100%;
   background-color: var(--primary-black-color);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(../images/header-mob-1x.jpg);
+  background-image: var(--gradient), url(../images/header-mob-1x.jpg);
+
+  @include retina {
+    background-image: var(--gradient), url(../images/header-mob-2x.jpg);
+  }
+
+  @include tablet {
+    height: 400px;
+    background-image: var(--gradient), url(../images/header-tab-1x.jpg);
+
+    @include retina {
+      background-image: var(--gradient), url(../images/header-tab-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    height: 600px;
+    max-width: 1600px;
+    background-image: var(--gradient), url(../images/header-lep-1x.jpg);
+
+    @include retina {
+      background-image: var(--gradient), url(../images/header-lep-2x.jpg);
+    }
+  }
 }
 
 .hero-main__title {
-  // max-width: 696px;
-  // margin-right: auto;
-  // margin-left: auto;
   margin-bottom: 30px;
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
-  // font-size: 44px;
-  // line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @include mobile {
+    text-align: center;
+    max-width: 360px;
+  }
+
+  @include tablet {
+    max-width: 360px;
+  }
+
+  @include desktop {
+    max-width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero-main__btn {
