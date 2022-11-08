@@ -37,6 +37,20 @@
   font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
+
+  @include tablet {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: calc(28 / 24);
+    letter-spacing: 0.03em;
+  }
 }
 
 .studio {
