@@ -303,30 +303,61 @@ body {
 
 .navigation,
 .contact__container {
-  width: 100%;
   display: flex;
+  width: 100%;
   align-items: center;
 }
 
 .contact {
+  display: none;
   width: 100%;
-  display: flex;
   align-items: center;
 }
-.contact li:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .contact {
+    display: flex;
+  }
+  .contact li:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 93px;
+  }
+  .contact li:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
 .menu {
   display: none;
   align-items: center;
 }
-.menu li:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    margin-left: 87px;
+  }
+  .menu li:not(:first-child) {
+    margin-left: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    display: flex;
+    margin-left: 93px;
+  }
+  .menu li:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
 .logo {
   display: inline-block;
+  padding: 24px 0 25px 0;
   color: var(--accent-color);
   font-family: raleway, sans-serif;
   font-size: 26px;
@@ -373,6 +404,19 @@ body {
   margin-left: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .contact__item {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__item {
+    flex-direction: row;
+  }
+}
 
 .menu__link {
   position: relative;
@@ -392,7 +436,6 @@ body {
 }
 
 .contact .link {
-  padding: 32px 0;
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -1040,10 +1083,6 @@ body {
   height: 50px;
   padding: 15px 16px;
   border-radius: 4px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
   color: var(--primary-white-color);
   border: 1px solid var(--icons-color);
   background-color: var(--primary-black-color);

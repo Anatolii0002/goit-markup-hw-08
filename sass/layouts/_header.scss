@@ -4,33 +4,61 @@
 
 .navigation,
 .contact__container {
-  width: 100%;
   display: flex;
+  width: 100%;
   align-items: center;
 }
 
 .contact {
+  display: none;
   width: 100%;
-  display: flex;
   align-items: center;
 
-  & li:not(:first-child) {
-    margin-left: 50px;
+  @include tablet {
+    display: flex;
+
+    & li:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 93px;
+
+    & li:not(:first-child) {
+      margin-left: 50px;
+    }
   }
 }
 
 .menu {
   display: none;
   align-items: center;
-  // margin-left: 93px;
 
-  & li:not(:first-child) {
-    margin-left: 50px;
+  @include tablet {
+    display: flex;
+    margin-left: 87px;
+
+    & li:not(:first-child) {
+      margin-left: 50px;
+    }
+  }
+
+  @include desktop {
+    display: flex;
+    margin-left: 93px;
+
+    & li:not(:first-child) {
+      margin-left: 50px;
+    }
   }
 }
 
 .logo {
   display: inline-block;
+  padding: 24px 0 25px 0;
   color: var(--accent-color);
   font-family: raleway, sans-serif;
   font-size: 26px;
@@ -76,6 +104,17 @@
 .contact__item {
   margin-left: auto;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @include desktop {
+    flex-direction: row;
+  }
 }
 
 .menu__link {
@@ -98,7 +137,7 @@
 }
 
 .contact .link {
-  padding: 32px 0;
+  // padding: 32px 0;
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -129,3 +168,46 @@
     border-radius: 4px;
   }
 }
+
+// .head-modal {
+//   position: fixed;
+//   z-index: 2;
+//   width: 100vw;
+//   height: 100vh;
+//   background-color: var(--white);
+//   padding: 48px 40px;
+// }
+
+// .head-modal .is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+
+// .head-modal .container {
+//   height: 100%;
+//   padding: 0;
+//   max-width: 480px;
+
+//   @include tablet {
+//     display: none;
+//   }
+// }
+
+// .menu-button-close {
+//   position: absolute;
+//   top: 21px;
+//   right: 25px;
+//   background-color: transparent;
+//   margin-left: auto;
+
+//   @include tablet {
+//     display: none;
+//   }
+// }
+
+// .menu-btn-close {
+//   width: 18px;
+//   height: 18px;
+//   fill: var(--primary-text-color);
+// }
