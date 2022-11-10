@@ -110,6 +110,7 @@
     align-items: baseline;
     flex-direction: column;
     gap: 10px;
+    margin-left: 96px;
   }
 
   @include desktop {
@@ -169,45 +170,116 @@
   }
 }
 
-// .head-modal {
-//   position: fixed;
-//   z-index: 2;
-//   width: 100vw;
-//   height: 100vh;
-//   background-color: var(--white);
-//   padding: 48px 40px;
-// }
+.menu-btn-open {
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-white-color);
 
-// .head-modal .is-hidden {
+  @include tablet {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-white-color);
+  padding: 48px 40px;
+}
+
+// .mob-menu .is-hidden {
 //   opacity: 0;
 //   pointer-events: none;
 //   visibility: hidden;
 // }
 
-// .head-modal .container {
-//   height: 100%;
-//   padding: 0;
-//   max-width: 480px;
+.mobile-menu .container {
+  height: 100%;
+  padding: 0;
+  max-width: 480px;
 
-//   @include tablet {
-//     display: none;
-//   }
-// }
+  @include tablet {
+    display: none;
+  }
+}
 
-// .menu-button-close {
-//   position: absolute;
-//   top: 21px;
-//   right: 25px;
-//   background-color: transparent;
-//   margin-left: auto;
+.mobile-cloce {
+  display: block;
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
 
-//   @include tablet {
-//     display: none;
-//   }
-// }
+  @include tablet {
+    display: none;
+  }
+}
 
-// .menu-btn-close {
-//   width: 18px;
-//   height: 18px;
-//   fill: var(--primary-text-color);
-// }
+.mod-menu__link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: calc(47 / 40);
+  letter-spacing: 0.02em;
+}
+
+.mod-menu :not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mod-menu {
+  margin-bottom: 306px;
+}
+
+.mod-contact :not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mod-contact {
+  margin-bottom: 64px;
+}
+
+.contact-mail {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  letter-spacing: 0.02em;
+}
+
+.contact-tel {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: calc(40 / 34);
+  letter-spacing: 0.02em;
+}
+
+.mod-social {
+  display: flex;
+}
+
+.mod-social :not(:last-child) {
+  margin-right: 20px;
+}
+
+.mod-social__link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  letter-spacing: 0.02em;
+}
+
+.mod-menu .container {
+  height: 100%;
+  padding: 0;
+  max-width: 480px;
+
+  @include tablet {
+    display: none;
+  }
+}

@@ -77,6 +77,7 @@ body {
 }
 
 .container {
+  width: 100%;
   padding: 0px 15px;
   margin-left: auto;
   margin-right: auto;
@@ -410,6 +411,7 @@ body {
     align-items: baseline;
     flex-direction: column;
     gap: 10px;
+    margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -463,6 +465,118 @@ body {
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
+}
+
+.menu-btn-open {
+  justify-content: space-between;
+  cursor: pointer;
+  border: none;
+  background-color: var(--primary-white-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-btn-open {
+    display: none;
+  }
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--primary-white-color);
+  padding: 48px 40px;
+}
+
+.mobile-menu .container {
+  height: 100%;
+  padding: 0;
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .mobile-menu .container {
+    display: none;
+  }
+}
+
+.mobile-cloce {
+  display: block;
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .mobile-cloce {
+    display: none;
+  }
+}
+
+.mod-menu__link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+}
+
+.mod-menu :not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mod-menu {
+  margin-bottom: 306px;
+}
+
+.mod-contact :not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mod-contact {
+  margin-bottom: 64px;
+}
+
+.contact-mail {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.02em;
+}
+
+.contact-tel {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+}
+
+.mod-social {
+  display: flex;
+}
+
+.mod-social :not(:last-child) {
+  margin-right: 20px;
+}
+
+.mod-social__link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2222222222;
+  letter-spacing: 0.02em;
+}
+
+.mod-menu .container {
+  height: 100%;
+  padding: 0;
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .mod-menu .container {
+    display: none;
+  }
 }
 
 .hero {
