@@ -76,6 +76,10 @@ body {
   margin: 0;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   padding: 0px 15px;
@@ -479,7 +483,7 @@ body {
   }
 }
 
-.mobile-menu {
+.mob-menu {
   position: fixed;
   top: 0;
   z-index: 1;
@@ -488,26 +492,38 @@ body {
   background-color: var(--primary-white-color);
   padding: 48px 40px;
 }
+.mob-menu > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
 
-.mobile-menu .container {
+.mob-menu .container {
   height: 100%;
   padding: 0;
   max-width: 480px;
 }
 @media screen and (min-width: 768px) {
-  .mobile-menu .container {
+  .mob-menu .container {
     display: none;
   }
 }
 
-.mobile-cloce {
+.menu-btn-close {
   display: block;
   background-color: transparent;
   margin-left: auto;
   border: none;
 }
 @media screen and (min-width: 768px) {
-  .mobile-cloce {
+  .menu-btn-close {
     display: none;
   }
 }
@@ -520,20 +536,18 @@ body {
   letter-spacing: 0.02em;
 }
 
-.mod-menu :not(:last-child) {
-  margin-bottom: 32px;
-}
-
 .mod-menu {
   margin-bottom: 306px;
 }
-
-.mod-contact :not(:last-child) {
+.mod-menu :not(:last-child) {
   margin-bottom: 32px;
 }
 
 .mod-contact {
   margin-bottom: 64px;
+}
+.mod-contact :not(:last-child) {
+  margin-bottom: 32px;
 }
 
 .contact-mail {
@@ -555,7 +569,6 @@ body {
 .mod-social {
   display: flex;
 }
-
 .mod-social :not(:last-child) {
   margin-right: 20px;
 }
@@ -566,17 +579,6 @@ body {
   font-size: 18px;
   line-height: 1.2222222222;
   letter-spacing: 0.02em;
-}
-
-.mod-menu .container {
-  height: 100%;
-  padding: 0;
-  max-width: 480px;
-}
-@media screen and (min-width: 768px) {
-  .mod-menu .container {
-    display: none;
-  }
 }
 
 .hero {
@@ -633,11 +635,15 @@ body {
   .hero-main__title {
     text-align: center;
     max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 768px) {
   .hero-main__title {
     max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {

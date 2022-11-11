@@ -46,10 +46,14 @@
   @include mobile {
     text-align: center;
     max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include tablet {
     max-width: 360px;
+    margin-right: auto;
+    margin-left: auto;
   }
 
   @include desktop {
