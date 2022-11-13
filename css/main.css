@@ -559,7 +559,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: auto;
 }
 @media screen and (min-width: 480px) {
   .mob-menu > .container {
@@ -620,7 +619,7 @@ body {
 }
 
 .mob-menu__list {
-  margin-bottom: 306px;
+  margin-bottom: 50px;
 }
 .mob-menu__list :not(:last-child) {
   margin-bottom: 32px;
