@@ -86,7 +86,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .container {
     max-width: 480px;
   }
@@ -125,13 +125,12 @@ body {
   left: 50%;
   border-radius: 4px;
   max-width: 450px;
-  min-height: 609px;
   padding: 35px 20px;
   background-color: #fff;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms linear;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .modal {
     padding: 40px;
     width: 450px;
@@ -140,7 +139,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    min-width: 528px;
     min-height: 581px;
   }
 }
@@ -439,7 +438,7 @@ body {
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .logo {
     font-size: 24px;
     font-weight: 700;
@@ -564,12 +563,12 @@ body {
   justify-content: space-between;
   overflow: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .mob-menu > .container {
     height: 100%;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .mob-menu {
     padding: 48px 40px;
   }
@@ -616,7 +615,7 @@ body {
 .mob-menu__link:hover, .mob-menu__link:focus, .mob-menu__link:active {
   color: var(--accent-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .mob-menu__link {
     font-size: 40px;
   }
@@ -635,7 +634,7 @@ body {
 .mob-connect :not(:last-child) {
   margin-bottom: 32px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .mob-connect {
     margin-bottom: 64px;
   }
@@ -743,7 +742,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .hero-main__title {
     text-align: center;
     max-width: 360px;
@@ -1224,7 +1223,7 @@ body {
     letter-spacing: 0.03em;
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 380px) {
   .tipo {
     font-size: 24px;
     font-weight: 700;

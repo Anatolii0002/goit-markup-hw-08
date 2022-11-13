@@ -22,7 +22,6 @@
     left: 50%;
     border-radius: 4px;
     max-width: 450px;
-    min-height: 609px;
     padding: 35px 20px;
     background-color: #fff;
     transform: translate(-50%, -50%) scaleY(1);
@@ -35,7 +34,7 @@
     }
 
     @include desktop {
-        width: 528px;
+        min-width: 528px;
         min-height: 581px;
     }
 }
