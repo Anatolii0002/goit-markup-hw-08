@@ -27,7 +27,7 @@
     transform: translate(-50%, -50%) scaleY(1);
     transition: transform 250ms linear;
 
-    @include mobile {
+    @include tablet {
         padding: 40px;
         width: 450px;
         min-height: 609px;
