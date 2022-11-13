@@ -7,18 +7,18 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: var(--gradient), url("../images/header-mob-1x.jpg");
+  background-image: var(--gradient), url("../images/header-mobile-1x.jpg");
 
   @include retina {
-    background-image: var(--gradient), url("../images/header-mob-2x.jpg");
+    background-image: var(--gradient), url("../images/header-mobile-2x.jpg");
   }
 
   @include tablet {
     height: 400px;
-    background-image: var(--gradient), url("../images/header-tab-1x.jpg");
+    background-image: var(--gradient), url("../images/header-tablet-1x.jpg");
 
     @include retina {
-      background-image: var(--gradient), url("../images/header-tab-2x.jpg");
+      background-image: var(--gradient), url("../images/header-tablet-2x.jpg");
     }
   }
 
