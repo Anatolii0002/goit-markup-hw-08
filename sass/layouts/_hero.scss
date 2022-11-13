@@ -25,10 +25,10 @@
   @include desktop {
     height: 600px;
     max-width: 1600px;
-    background-image: var(--gradient), url("../images/header-lep-1x.jpg");
+    background-image: var(--gradient), url("../images/header-des-1x.jpg");
 
     @include retina {
-      background-image: var(--gradient), url("../images/header-lep-2x.jpg");
+      background-image: var(--gradient), url("../images/header-des-2x.jpg");
     }
   }
 }
