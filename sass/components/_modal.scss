@@ -28,12 +28,7 @@
     transition: transform 250ms linear;
 
     @include mobile {
-        width: 380px;
-    }
-
-    @include tablet {
         width: 450px;
-        min-height: 609px;
     }
 
     @include desktop {
