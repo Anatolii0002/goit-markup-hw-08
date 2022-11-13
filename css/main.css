@@ -548,7 +548,7 @@ body {
 .mob-menu {
   position: fixed;
   top: 0;
-  background-color: #ffffff;
+  background-color: var(--primary-white-color);
   width: 100vw;
   height: 100vh;
   z-index: 1;
