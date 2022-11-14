@@ -245,6 +245,11 @@ body {
     font-size: 14px;
   }
 }
+@media screen and (max-width: 480px) {
+  .form-checkbox {
+    font-size: 8px;
+  }
+}
 
 .form-field textarea {
   display: block;
@@ -303,6 +308,11 @@ body {
 @media screen and (min-width: 1200px) {
   .condition {
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .condition {
+    font-size: 8px;
   }
 }
 
@@ -370,6 +380,18 @@ body {
   width: 100%;
   align-items: center;
 }
+@media screen and (min-width: 768px) {
+  .navigation,
+.contact__container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation,
+.contact__container {
+    width: 1200px;
+  }
+}
 
 .contact {
   display: none;
@@ -420,7 +442,6 @@ body {
 
 .logo {
   display: inline-block;
-  padding: 24px 0 25px 0;
   color: var(--accent-color);
   font-family: raleway, sans-serif;
   font-size: 26px;
@@ -473,7 +494,6 @@ body {
     align-items: baseline;
     flex-direction: column;
     gap: 10px;
-    margin-left: 96px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -531,6 +551,7 @@ body {
 
 .menu-button-open {
   margin-left: auto;
+  padding: 10px 15px 10px 0;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -564,6 +585,11 @@ body {
 @media screen and (min-width: 480px) {
   .mob-menu > .container {
     height: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
   }
 }
 @media screen and (min-width: 480px) {
@@ -660,6 +686,7 @@ body {
 
 .mob-social {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 10px;
 }
@@ -690,6 +717,14 @@ body {
   visibility: hidden;
 }
 
+@media screen and (max-width: 450px) {
+  .mob-social__link {
+    font-size: 10px;
+  }
+  .mob-connect__tel {
+    font-size: 25px;
+  }
+}
 .hero {
   display: flex;
   align-items: center;
@@ -784,7 +819,7 @@ body {
 }
 
 .section__peculiarities {
-  padding-bottom: 60px;
+  padding-bottom: 0;
 }
 
 .peculiarities {
@@ -870,7 +905,6 @@ body {
 
 .container-work {
   display: flex;
-  gap: 30px;
 }
 
 .image-work {
@@ -1010,6 +1044,11 @@ body {
 
 .clients-list {
   width: 210px;
+}
+@media screen and (min-width: 320px) {
+  .clients-list {
+    width: calc((100% - 30px) / 2);
+  }
 }
 @media screen and (min-width: 768px) {
   .clients-list {

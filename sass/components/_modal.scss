@@ -138,6 +138,10 @@
     @include desktop {
         font-size: 14px;
     }
+
+    @media screen and (max-width: 480px) {
+        font-size: 8px;
+    }
 }
 
 .form-field textarea {
@@ -195,6 +199,10 @@
 
     @include desktop {
         font-size: 14px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 8px;
     }
 }
 
